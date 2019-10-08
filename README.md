@@ -27,7 +27,7 @@ localhost
 localhost
 ```
 
-You may also need to increase the number of task slots available your workers, especially if using a single worker. Our scenarios will require a minimum of four slots, due to the four parallel dataflow tasks.
+You may also need to increase the number of task slots available your workers, especially if using a single worker. Our scenarios will require a minimum of four slots in total to be available across our workers, due to the four parallel dataflow tasks.
 
 The worker (Task Manager) slots can be configured via the `FLINK_HOME/conf/flink-conf.yaml`. For example, to increase 
 ```
